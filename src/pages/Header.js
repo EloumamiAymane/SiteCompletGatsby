@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Header = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+          const mainHeader = document.querySelector('.main-header');
+          if (mainHeader) {
+            const windowpos = window.scrollY || window.pageYOffset;
+            if (windowpos >= 110) {
+              mainHeader.classList.add('fixed-header');
+            } else {
+              mainHeader.classList.remove('fixed-header');
+            }
+          }
+        };
+    
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    
+        // Clean up event listener on unmount
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
 return (
 <header class="main-header style-two">
 
@@ -470,7 +491,7 @@ return (
     </div>
 
     {/* <!--sticky Header--> */}
-    <div class="sticky-header">
+    <div class="sticky-header" style={{position:'fixed',top:'0px'}}>
         <div class="large-container clearfix">
             <figure class="logo-box"><a href="https://naxly.wpcomstaging.com/" title="Titre du site"><img
                         src="https://naxly.wpcomstaging.com/wp-content/uploads/2020/04/logo_AI.png" alt="logo"

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import './Slider.css'
-const MobileAppProcess = () => {
+import CardMobile from '../Components/Cards/CardMobile';
+const Mob = () => {
     const settings = {
         dots:true,
        
@@ -12,18 +13,31 @@ const MobileAppProcess = () => {
         autoplaySpeed: 2000,
         
         responsive: [
-           
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 11,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 11,
+                slidesToScroll: 1
+              }
+            },
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 11,
                 slidesToScroll: 1
               }
             },
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 11,
                 slidesToScroll: 1
               }
             },
@@ -35,28 +49,25 @@ const MobileAppProcess = () => {
 
       const [widthh, setWidth] = useState("3762");
       const [transform, setTransform] = useState(" translate3d(-1032px, 0px, 0px)");
-  useEffect(() => {
-    const handleResize = () => {
-        if (window.innerWidth < 602 && window.innerWidth>370 ) {
-        setWidth("300");
-        setTransform("")
-       
-    }else if(window.innerWidth <= 370){
-        setWidth("200");
-        setTransform("")
-    }
-    else {
-        setTransform(" translate3d(-1032px, 0px, 0px)")
-        setWidth("3762");
-    }
-}
+//   useEffect(() => {
+//     const handleResize = () => {
+//         if (window.innerWidth < 602 ) {
+//         setWidth("300");
+//         setTransform("")
+//         console.log("yes")
+//     }
+//     else {
+//         setTransform(" translate3d(-1032px, 0px, 0px)")
+//         setWidth("3762");
+//     }
+// }
 
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }  , []);
+//     window.addEventListener('resize', handleResize);
+//     handleResize();
+//     return () => {
+//       window.removeEventListener('resize', handleResize);
+//     };
+//   }  , []);
 
 return (
 <div>
@@ -81,10 +92,21 @@ return (
                                             <div class="owl-stage-outer">
                                             
                                                 <div class="owl-stage" 
-                                                style={{transition:' all 1s ease 0s', width:`${widthh}px`, transform:`${transform}`,margin:'auto'}}
+                                                style={{transition:' all 1s ease 0s', width:`${widthh}px`, transform:`${transform}`}}
                                                   >
                                                     <Slider  {...settings}> 
-                                                    
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+                                                    <CardMobile/>
+{/*                                                     
                                                     <div class="owl-item cloned"
                                                     style={{width:' 322px', marginRight: '20px'}}
                                                      >
@@ -191,7 +213,7 @@ return (
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                       </Slider>
                                                 </div>
                                                 
@@ -222,4 +244,4 @@ return (
 )
 }
 
-export default MobileAppProcess
+export default Mob

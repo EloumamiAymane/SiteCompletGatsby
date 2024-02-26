@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Slider from 'react-slick';
+import CardTestimonials from '../Components/Cards/CardTestimonials';
 
 const Testimonials1 = () => {
     let sliderRef = useRef(null);
@@ -10,22 +11,27 @@ const Testimonials1 = () => {
       sliderRef.slickPrev();
     };
    
-    const [transform, setTransform] = useState("translate3d(-0px, -510px, 0px)");
+ 
+    const [width, setWidth] = useState("918.8px");
+    const [height, setHeight] = useState("467px");
 useEffect(() => {
   const handleResize = () => {
-if (window.innerWidth >= 1400) {
-        setTransform('translate3d(-0px, -510px, 0px)');
-      } else if (window.innerWidth >= 1026) {
-        setTransform('translate3d(-0px, -510px, 0px)');
-      } else if (window.innerWidth >= 565) {
-        setTransform('translate3d(-0px, -10px, 0px)');
-      } else if (window.innerWidth >= 479) {
-        setTransform('translate3d(-0px, -60px, 0px)');
-      } else if (window.innerWidth >= 300) {
-        setTransform('translate3d(-0px, -10px, 0px)');
-      } else {
-        setTransform('translate3d(-0px, -60px, 0px)');
-      }
+
+       
+       if (window.innerWidth >= 600) {
+        setWidth("100%")
+        setHeight("100%")
+      } 
+      else  if (window.innerWidth >= 364) {
+        setWidth("100%")
+        setHeight("100%")
+      } 
+      else  if (window.innerWidth >= 300) {
+        setWidth("100%")
+        setHeight("100%")
+        
+      } 
+
 }
 
   window.addEventListener('resize', handleResize);
@@ -35,9 +41,9 @@ if (window.innerWidth >= 1400) {
   };
 }  , []);
     const settings = {
-        dots: true,
+       
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
@@ -45,41 +51,30 @@ if (window.innerWidth >= 1400) {
         autoplay: true,
     speed: 2000,
     autoplaySpeed: 5000,
-responsive: [
-           
-         
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              },
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              },
-           
-          ],
-        
-      };
+    }
+    const dataTest=[
+        {image:'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=178%2C180&amp;ssl=1',
+        description:'As a growing company, we found in Naxly expertise in data science invaluable. In almost two years of cooperation, they’ve helped us define our data',
+        author:'Cuthbert Brain',
+        job:"CEO & Founder - Soft Solution"
+        },
+        {image:'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=178%2C180&amp;ssl=1"',
+        description:'As a growing company, we found in Naxly expertise in data science invaluable. In almost two years of cooperation, they’ve helped us define our data',
+        author:'Cuthbert Brain',
+        job:"CEO & Founder - Soft Solution"
+    },
+        {image:'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=178%2C180&amp;ssl=1',
+        description:'As a growing company, we found in Naxly expertise in data science invaluable. In almost two years of cooperation, they’ve helped us define our data',
+        author:'Cuthbert Brain',
+        job:"CEO & Founder - Soft Solution"
+        },
+        {image:'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=178%2C180&amp;ssl=1',
+        description:'As a growing company, we found in Naxly expertise in data science invaluable. In almost two years of cooperation, they’ve helped us define our data',
+        author:'Cuthbert Brain',
+        job:"CEO & Founder - Soft Solution"
+        }
+]     
+      
 return (
 <section >
 
@@ -105,226 +100,21 @@ return (
 
                                         <div class="bx-wrapper" style={{maxWidth:"100%"}}>
                                             <div class="bx-viewport"
-                                                style={{width:' 100%',overflow: "hidden" ,position: 'relative', height: '467px'}}>
+                                                style={{width:'100%',overflow: "hidden" ,position: 'relative', height: `${height}`}}>
                                                 <div class="bxslider testimonial_new_bx"
-                                                    style={{width: 'auto', position: 'relative',transitionDuration: '0s', transform:`${transform}`}}>
-                                                         <Slider  {...settings}  ref={slider => {
-          sliderRef = slider;
-        }}> 
-                                                    <div class="bx_item bx-clone"
-                                                        style={{float: 'none', listStyle: 'none', position: 'relative', width: '918.8px'}}>
-
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img loading="lazy" decoding="async" width="178"
-                                                                        height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1301"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-4/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-4"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bx_item"
-                                                        style={{float: 'none', position: 'relative', width: '918.8px',listStyle:'none'}}>
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img decoding="async" width="178" height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1298"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-1/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-1"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bx_item"
-                                                        style={{float: 'none', listStyle: 'none', position: 'relative', width: '918.8px'}}>
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img decoding="async" width="178" height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1299"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-2/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-2"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-2.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bx_item"
-                                                        style={{float: 'none', listStyle: 'none', position: 'relative', width: '918.8px'}}>
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img decoding="async" width="178" height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1300"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-3/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-3"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-3.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bx_item"
-                                                        style={{float: 'none', listStyle: 'none', position: 'relative', width: '918.8px'}}>
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img loading="lazy" decoding="async" width="178"
-                                                                        height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1301"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-4/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-4"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-4.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    style={{width: 'auto', position: 'relative',transitionDuration: '0s', transform:'translate3d(0px, -30px, 0px)'}}>
+                                                       
+                                                    <Slider {...settings} ref={slider=> { sliderRef = slider }}>
+                                                        {dataTest.map((testi,index)=>(
+                                                        <>
+                                                    
+                                                    <CardTestimonials testi={testi} width={width} />
+                                                        </>
+                                                        ))}
+                                                   
+                                                                                                       
+                                              
                                                     </Slider  > 
-                                                    <div class="bx_item bx-clone"
-                                                        style={{float: 'none', listStyle: 'none', position: 'relative', width: '918.8px'}}>
-                                                        <div class="testi_box_content">
-                                                            <div class="testi_box_content_outer">
-                                                                <div class="person_box">
-                                                                    <img decoding="async" width="178" height="180"
-                                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=178%2C180&amp;ssl=1"
-                                                                        class="img-fluid wp-post-image" alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?w=178&amp;ssl=1 178w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=80%2C80&amp;ssl=1 80w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=105%2C105&amp;ssl=1 105w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=85%2C85&amp;ssl=1 85w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=160%2C161&amp;ssl=1 160w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?resize=70%2C70&amp;ssl=1 70w"
-                                                                        sizes="(max-width: 178px) 100vw, 178px"
-                                                                        data-attachment-id="1298"
-                                                                        data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/cuthbert-brain-2/home-6-testi-box-1/"
-                                                                        data-orig-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-orig-size="178,180"
-                                                                        data-comments-opened="1"
-                                                                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-                                                                        data-image-title="home-6-testi-box-1"
-                                                                        data-image-description="" data-image-caption=""
-                                                                        data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1"
-                                                                        data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-6-testi-box-1.png?fit=178%2C180&amp;ssl=1" />
-                                                                </div>
-                                                                <div class="testi_box_content_inner">
-                                                                    <div class="content_box">
-                                                                        <p>As a growing company, we found in Naxly’
-                                                                            expertise in data science invaluable. In
-                                                                            almost two years of cooperation, they’ve
-                                                                            helped us define our data.</p>
-                                                                        <h2>Cuthbert Brain</h2>
-                                                                        <h6>CEO &amp; Founder - Soft Solution</h6>
-                                                                    </div>
-                                                                    <span class="flaticon-quote quote_icon"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="bx-controls bx-has-controls-direction">

@@ -1913,7 +1913,10 @@
 
 @media only screen and (max-width: 399px){
 
-
+#aymane{
+  background-color: red;
+  width:270px;
+}
   .clients-style-two .logo-inner .logo-box-one li,
   .clients-style-two .logo-inner .logo-box li{
     width: 100%;

@@ -9,4 +9,8 @@
 .slick-dots li button::before  {
     font-size:10px;
 }
- 
+@media screen and (max-width: 370px) {
+    .slick-dots {
+       visibility: hidden;
+    }
+  }

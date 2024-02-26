@@ -28,18 +28,21 @@ import Skill from './Skill'
 import Statistic from './Statistic'
 import Testimonials1 from './Testimonials1'
 import MobileAppProcess from './MobileAppProcess'
+import Header1 from './Header1'
+import Header2 from './Header2'
 
 const IndexPage = () => {
   return (
    <div class="page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-115 logged-in admin-bar wp-custom-logo menu-layer elementor-default elementor-kit-9 elementor-page elementor-page-115 dialog-body dialog-buttons-body dialog-container dialog-buttons-container customize-support e--ua-firefox"
   style={{overflow:'visible'}} data-elementor-device-mode="desktop">
 <div class="n-stan">
-<Header/>
-
+{/* <Header/> */}
+<Header1/>
+{/* <Header2/> */}
 <div class="elementor elementor-115" data-elementor-type="wp-page" data-elementor-id="115">
 {/* <MainPage/> */}
-{/* <MainPage1/> */}
-<MainPage2/>
+<MainPage1/>
+{/* <MainPage2/> */}
 {/* <MainPage3/> */}
 <Subscribe/>
 

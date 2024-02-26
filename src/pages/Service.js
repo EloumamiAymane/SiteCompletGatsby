@@ -28,44 +28,7 @@ const Service = () => {
             }
           ]
       });
-    
-      useEffect(() => {
-        const handleResize = () => {
-           
-          if (window.innerWidth < 860 && window.innerWidth > 576) {
-            setSettings(prevSettings => ({
-              ...prevSettings,
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }));
-           
-        }   else if (window.innerWidth < 576) {
-                setSettings(prevSettings => ({
-                  ...prevSettings,
-                  slidesToShow: 1,
-                  slidesToScroll: 2
-                }));
-                setWidth('400px')
-              }
-          else {
-            setSettings(prevSettings => ({
-              ...prevSettings,
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }));
-          
-          }
-        };
-    
-        // Add event listener for window resize
-        window.addEventListener('resize', handleResize);
-    
-        // Call handleResize initially to set initial settings based on window size
-        handleResize();
-    
-        // Remove event listener when component unmounts
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
+
     
   
     const slides = [
@@ -127,26 +90,13 @@ class="elementor-section elementor-top-section elementor-element elementor-eleme
                                                     <div class="owl-stage "
                                                     style={{transition:'all 3s ease 0s'}}
                                                     >
-                                                
-                                                 {/* <Fade arrows={false} infinite={true} ref={slideshowRef}  >
-                                                 
-                                                 {slides.map((slide, index) => (
-                                                           index % 3 === 0 && (
-                                                           <div className="slider-row" key={index}>
-                                                               {slides.slice(index, index + 3).map((slideItem, slideIndex) => (
-                                                               <ServiceCard  skey={slideIndex} slide={slideItem} />
-                                                               ))}
-                                                           </div>
-                                                           )
-                                                       ))}
-                                                       </Fade> */}
+                                             
                                                 <Slider {...settings} ref={slider => { sliderRef = slider}}>
                                                
                                               
                                                                {slides.map((slideItem, slideIndex) => (
                                                                <>
-                                                               <ServiceCard  key={slideIndex} slide={slideItem}  width={width}/>
-                                                              
+                                                               <ServiceCard  key={slideIndex} slide={slideItem}  />                                                             
                                                                </>
                                                               
                                                           

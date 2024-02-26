@@ -1,12 +1,11 @@
 import React from 'react'
 
-const ServiceCard = ({slide,width}) => {
-    console.log(width)
-    // console.log(slide)
+const ServiceCard = ({slide}) => {
+
   return (
-    <div class="owl-item " id='ole'
-    style={{width:`${width}`,marginRight:'30px'}}>
-    <div class="service-block-two">
+    <div class="owl-item"
+    style={{width:'100%'}}>
+    <div class="service-block-two" style={{margin:'10px'}}>
         <div class="inner-box">
             <div class="text-layer">
                 <h2>{slide.title}</h2>

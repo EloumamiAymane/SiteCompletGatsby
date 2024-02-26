@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import Slider from 'react-slick';
 
 const Testimonials = () => {
+    let sliderRef = useRef(null);
+    const next = () => {
+      sliderRef.slickNext();
+    };
+    const Previous = () => {
+      sliderRef.slickPrev();
+    };
+    const settings = {
+        dots: false,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        waitForAnimate: false
+      };
 return (
 <section class="elementor-section elementor-top-section elementor-element elementor-element-cbae8fb elementor-section-full_width elementor-section-height-default elementor-section-height-default">
 
@@ -37,8 +54,9 @@ return (
 
                                             <div class="owl-stage-outer">
                                                 <div class="owl-stage"
-                                                style={{transform:"translate3d(-3102px, 0px, 0px)",transition:'all 0s ease 0s',width:'7238px'}}
+                                                style={{transition:'all 0s ease 0s'}}
                                                    >
+                                                    <Slider {...settings} ref={slider=> { sliderRef = slider }}>
                                                     <div class="owl-item cloned" style={{width:'1034px'}}  >
                                                         <div class="testimonial-content">
                                                             <div class="inner-box">
@@ -326,11 +344,12 @@ return (
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    </Slider>
                                                 </div>
                                             </div>
                                             <div class="owl-nav">
-                                                <div class="owl-prev"><span class=""></span></div>
-                                                <div class="owl-next"><span class=""></span></div>
+                                                <div class="owl-prev" onClick={Previous}><span class=""></span></div>
+                                                <div class="owl-next" onClick={next}><span class=""></span></div>
                                             </div>
                                             <div class="owl-dots">
                                                 <div class="owl-dot"><span></span></div>

@@ -3,10 +3,7 @@ import Slider from 'react-slick';
 import CardProject from '../Components/Cards/CardProject';
 
 const LatestProject = () => {
-    const [sliderStyle, setSliderStyle] = useState({
-        width: '370px',
-        left: '0%'
-      });
+  let sliderRef = useRef(null);
     const projetcs = [
         { title: 'Invoice data capture', photo: 'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gallery-3.jpg?resize=370%2C340&amp;ssl=1' },
         { title: 'Automate feedback Analysis', photo: 'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gallery-1.jpg?resize=370%2C340&amp;ssl=1' },
@@ -18,7 +15,7 @@ const LatestProject = () => {
       ];
 
 
-      let sliderRef = useRef(null);
+    
       const goToPrevious = () => {
         // console.log(sliderRef)
           sliderRef.slickNext();
@@ -30,7 +27,7 @@ const LatestProject = () => {
       };
 
       const [settings, setSettings] = useState({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1500,
         slidesToShow: 3,
@@ -45,82 +42,14 @@ const LatestProject = () => {
               }
             },
             {
-              breakpoint: 834,
+              breakpoint: 700,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
               }
-            },
-            {
-                breakpoint: 608,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
+            }
           ]
       });
-      useEffect(() => {
-        const handleResize = () => {
-           
-          if (window.innerWidth < 1152 && window.innerWidth > 834) {
-            setSettings(prevSettings => ({
-              ...prevSettings,
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }));
-            setSliderStyle(prevStyle => ({
-                
-                width: '400px',
-                left:'0%'
-              }));
-           
-        }   else if (window.innerWidth <= 834 && window.innerWidth >608) {
-                setSettings(prevSettings => ({
-                  ...prevSettings,
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }));
-                setSliderStyle(prevStyle => ({
-                
-                    width: '500px',
-                    left:'12%'
-                  }));
-              }
-              else if (window.innerWidth <= 608) {
-                setSettings(prevSettings => ({
-                  ...prevSettings,
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }));
-                setSliderStyle(prevStyle => ({
-                
-                    width: '200px',
-                    left:'22%'
-                  }));
-              }
-             
-          else {
-            setSettings(prevSettings => ({
-              ...prevSettings,
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }));
-          
-          }
-        };
-    
-        // Add event listener for window resize
-        window.addEventListener('resize', handleResize);
-    
-        // Call handleResize initially to set initial settings based on window size
-        handleResize();
-    
-        // Remove event listener when component unmounts
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
-    
-
 return (
 <section class="elementor-section elementor-top-section elementor-element elementor-element-a6f5114 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
 
@@ -153,14 +82,14 @@ return (
 
                                     <div class="owl-stage-outer">
                                         <div class="owl-stage"
-                                        style={{transform:'translate3d(0px, 0px, 0px)',transition:'all 0s ease 0'}}
+                                        style={{transition:'all 0s ease 0'}}
                                            >
                                         <Slider {...settings} ref={slider => { sliderRef = slider}}>
                                                
                                               
                                                {projetcs.map((slideItem, slideIndex) => (
                                                <>
-                                               <CardProject  key={slideIndex} slide={slideItem} sTyle={sliderStyle}  />
+                                               <CardProject  key={slideIndex} slide={slideItem}   />
                                               
                                                </>
                                               
