@@ -1,5 +1,7 @@
 import React from 'react'
-
+import  shape12 from "../images/shape/shape-12.png"
+import decor1 from "../images/icons/decor-1.png"
+import about from "../images/resource/about.png"
 const About = () => {
 return (
 <section class="elementor-section elementor-top-section elementor-element elementor-element-7ba2a33 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
@@ -21,12 +23,12 @@ return (
                                                 data-wow-duration="1500ms"
                                                 style={{visibility:'visible',animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInLeft'}}>
                                                 <div class="pattern-layer"
-                                                style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-12.png)'}}
+
                                                 >
                                                 </div>
                                                 <figure class="image js-tilt" style={{willChange:'transform'}}><img
                                                         decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/about-1.png?w=525&amp;ssl=1"
+                                                        src={about}
                                                         alt="Awesome Image" width="615" height="504"/>
                                                     <div class="js-tilt-glare"
                                                     style={{position:'absolute',top:'0px',left:'0px',width:'100%',height:'100%',overflow:'hidden'}}

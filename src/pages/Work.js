@@ -14,20 +14,20 @@ return (
                     <div class="elementor-widget-container">
 
                         <section class="process-style-two "
-                        style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/process-bg-1.jpg)'}}
+
                         >
                             <div class="auto-container">
                                 <div class="sec-title text-center style-two">
                                     <p>Our Work Process</p>
                                     <h2>Simple &amp; clean work process</h2>
                                     <div class="decor"
-                                      style={{backgroundImage:'  url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}
+
                                       >
                                     </div>
                                 </div>
                                 <div class="inner-content">
                                     <div class="line"
-                                    style={{backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/line-1.png)'}}
+
                                     >
                                     </div>
                                     <div class="row clearfix">
@@ -35,12 +35,12 @@ return (
                                             <div class="work-block-two">
                                                 <div class="inner-box">
                                                     <div class="arrow-box"
-                                                    style={{backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/arrow-1.png)'}}
+
                                                        >
                                                     </div>
                                                     <div class="icon-box">
                                                         <div class="border-line"
-                                                        style={{backgroundImage: ' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/border-1.png)'}}
+
                                                           >
                                                         </div>
                                                         <i class="icon flaticon-big-data"></i>
@@ -66,12 +66,12 @@ return (
                                             <div class="work-block-two">
                                                 <div class="inner-box">
                                                     <div class="arrow-box"
-                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/arrow-1.png)'}}
+
                                                       >
                                                     </div>
                                                     <div class="icon-box">
                                                         <div class="border-line"
-                                                        style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/border-1.png)'}}
+
                                                         >
                                                         </div>
                                                         <i class="icon flaticon-ui"></i>
@@ -97,13 +97,12 @@ return (
                                             <div class="work-block-two">
                                                 <div class="inner-box">
                                                     <div class="arrow-box"
-                                                      style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/arrow-1.png)'}}
+
                                                        >
                                                     </div>
                                                     <div class="icon-box">
                                                         <div class="border-line"
-                                                        style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/border-1.png)'}}
-                                                           >
+                                                      >
                                                         </div>
                                                         <i class="icon flaticon-brain"></i>
                                                     </div>

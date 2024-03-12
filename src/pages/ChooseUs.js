@@ -18,7 +18,7 @@ return (
                                     <p>Why Choose Us</p>
                                     <h2>Reason for people choose us</h2>
                                     <div class="decor"
-                                        style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}>
+                                    >
                                     </div>
                                 </div>
                                 <div class="row clearfix">
@@ -28,7 +28,7 @@ return (
                                                 <div class="single-item ">
                                                     <div class="icon-box">
                                                         <div class="bg-layer"
-                                                            style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-4.png)'}}>
+                                                         >
                                                         </div>
                                                         <i class="icon flaticon-global" style={{WebkitBackgroundClip:'text'}}></i>
                                                     </div>
@@ -44,7 +44,7 @@ return (
                                                 <div class="single-item text-right">
                                                     <div class="icon-box">
                                                         <div class="bg-layer"
-                                                            style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-4.png)'}}>
+                                                            >
                                                         </div>
                                                         <i class="icon flaticon-analysis" style={{WebkitBackgroundClip:'text'}}></i>
                                                     </div>
@@ -65,13 +65,13 @@ return (
                                         <div id="video_block_01">
                                             <div class="video-inner wow slideInRight animated" data-wow-delay="00ms"
                                                 data-wow-duration="1500ms"
-                                                 style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/video-2.jpg)',visibility: 'visible', animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInRight'}}>
+                                                 style={{visibility: 'visible', animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInRight'}}>
                                                 <div class="pattern-layer"
-                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-14.png)'}}>
+                                                  >
                                                 </div>
                                                 <div class="video-btn">
                                                     <div class="btn-bg rotate-me"
-                                                        style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-5.png)'}}>
+                                                      >
                                                     </div>
                                                     <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s"
                                                         class="lightbox-image" data-caption=""><i

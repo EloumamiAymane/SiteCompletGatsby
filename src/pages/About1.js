@@ -32,7 +32,7 @@ const [active,setActive]=useState("")
                                                                 <div class="sec-title text-left">
                                                                     <p>Reseaux & Opportunités </p>
                                                                     <h2>Réseau : Succès Assuré</h2>
-                                                                    <div class="decor"style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)' }}></div>
+                                                                    <div class="decor" ></div>
                                                                 </div>
                                                                 <div class="text">
                                                                     <p> Accédez à un réseau dynamique pour des opportunités exclusives et des conseils d'experts. Votre avenir commence ici</p>
@@ -47,7 +47,7 @@ const [active,setActive]=useState("")
                                                         </div>
                                                         <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
                                                             <div class="inner-box">
-                                                                <div class="video-inner"  style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/video-1.jpg)' }}>
+                                                                <div class="video-inner" >
                                                                     <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
                                                                 </div>
                                                             </div>
@@ -62,7 +62,7 @@ const [active,setActive]=useState("")
                                                                 <div class="sec-title text-left">
                                                                     <p>Reseaux & Opportunités </p>
                                                                     <h2>Explorez: Osez l'Infini</h2>
-                                                                    <div class="decor" style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)' }}></div>
+                                                                    <div class="decor" ></div>
                                                                 </div>
                                                                 <div class="text">
                                                                     <p> Découvrez de nouvelles opportunités et élargissez vos perspectives professionnelles. Le monde est votre terrain de jeu</p>
@@ -77,7 +77,7 @@ const [active,setActive]=useState("")
                                                         </div>
                                                         <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
                                                             <div class="inner-box">
-                                                                <div class="video-inner" style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/video-1.jpg)' }}>
+                                                                <div class="video-inner" >
                                                                     <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
                                                                 </div>
                                                             </div>
@@ -91,7 +91,7 @@ const [active,setActive]=useState("")
                                                                 <div class="sec-title text-left">
                                                                     <p>Reseaux & Opportunités </p>
                                                                     <h2>Success Story: Votre Chapitre Commence</h2>
-                                                                    <div class="decor" style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)' }}></div>
+                                                                    <div class="decor" ></div>
                                                                 </div>
                                                                 <div class="text">
                                                                     <p>Bâtissez votre héritage professionnel avec notre soutien et une communauté engagée. Écrivez votre propre histoire de succès.</p>
@@ -106,7 +106,7 @@ const [active,setActive]=useState("")
                                                         </div>
                                                         <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
                                                             <div class="inner-box">
-                                                                <div class="video-inner" style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/video-1.jpg)' }}>
+                                                                <div class="video-inner" >
                                                                     <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
                                                                 </div>
                                                             </div>

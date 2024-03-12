@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo1 from  "../images/logo1.png"
 const Footer = () => {
 return (
 <footer class="footer-style-two bg-color-3">
@@ -261,7 +261,8 @@ return (
                     <p>Copyright © <a href="#">Naxly</a>, All Rights Reserved.</p>
                 </div>
                 <figure class="footer-logo"><a href="https://naxly.wpcomstaging.com/"><img
-                            src="https://naxly.wpcomstaging.com/wp-content/uploads/2020/04/Logo_AI-1.png"
+                            src={logo1}
+                            style={{height:'85px',width:"85px"}}
                             alt="Awesome Image"/></a></figure>
             </div>
             <div class="right-column pull-right">

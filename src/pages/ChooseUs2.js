@@ -1,5 +1,6 @@
 import React from 'react'
-
+import mask from "../images/resource/mask.png"
+import circlel from "../images/resource/r.png"
 export const ChooseUs2 = () => {
 return (
 <section>
@@ -37,7 +38,7 @@ return (
                                             <div class="icon">
                                                 <span class="flaticon-brain-2"></span>
                                                 <small><img decoding="async" width="98" height="94"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-7-face-icon-bg.png?resize=98%2C94&amp;ssl=1"
+                                                        src={circlel}
                                                         class="attachment-naxly_98x94 size-naxly_98x94 wp-post-image"
                                                         alt="" data-attachment-id="1451"
                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_service/accurate/home-7-face-icon-bg/"
@@ -61,7 +62,7 @@ return (
                                             <div class="icon">
                                                 <span class="flaticon-brain-2"></span>
                                                 <small><img decoding="async" width="98" height="94"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-7-face-icon-bg-3.png?resize=98%2C94&amp;ssl=1"
+                                                        src={circlel}
                                                         class="attachment-naxly_98x94 size-naxly_98x94 wp-post-image"
                                                         alt="" data-attachment-id="1453"
                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_service/accurate/home-7-face-icon-bg-3/"
@@ -87,7 +88,7 @@ return (
                                         <div class="scan_image">
                                             <div class="animation_scan"></div>
                                             <img decoding="async"
-                                                src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/home-7-scan-image.png?w=525&amp;ssl=1"
+                                                src={mask}
                                                 class="img-fluid" alt="Awesome Image" width="370" height="359"/>
                                         </div>
                                     </div>

@@ -14,6 +14,7 @@
 }
 
 
+
 /*** 
 
 ====================================================================
@@ -662,7 +663,7 @@ img {
 }
 
 .sec-title.style-two h2{
-	color: #040535;
+	color: #137951;
 }
 
 .sec-title.light p,
@@ -676,6 +677,7 @@ img {
 	height: 9px;
 	background-repeat: no-repeat;
 	margin: 0 auto;
+    background-image: url("../images/icons/decor-1.png");
 }
 
 .sec-title.text-left .decor{

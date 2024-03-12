@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ServiceCard from '../Components/Cards/ServiceCard'
 import Slider from "react-slick";
-
+import  illustration from  "../images/resource/illastration-2.png"
 const Service = () => {
     const [width,setWidth]=useState('270px')
     const [settings, setSettings] = useState({
@@ -65,11 +65,11 @@ class="elementor-section elementor-top-section elementor-element elementor-eleme
 
                         <section class="service-style-two">
                             <div class="pattern-layer"
-                            style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-13.png)'}}
+
                             >
                             </div>
                             <figure class="image-layer"><img decoding="async"
-                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/illastration-2.png?w=525&amp;ssl=1"
+                                    src={illustration}
                                     alt="Awesome Image" width="525" height="823"/></figure>
                             <div class="auto-container">
                                 <div class="row clearfix">

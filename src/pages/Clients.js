@@ -1,5 +1,10 @@
 import React from 'react'
-
+import client1 from "../images/clients/clients-logo-6.png"
+import client2 from "../images/clients/clients-logo-7.png"
+import client3 from "../images/clients/clients-logo-8.png"
+import client4 from "../images/clients/clients-logo-9.png"
+import client5 from "../images/clients/clients-logo-10.png"
+import client6 from "../images/clients/clients-logo-11.png"
 const Clients = () => {
 return (
 <section
@@ -16,12 +21,12 @@ return (
                         <section class="clients-style-two bg-color-1">
                             <div class="pattern-layer">
                                 <div class="pattern-1"
-                                style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-16.png)'}}
+
                                    >
                                 </div>
                                 <div class="pattern-2 wow slideInRight animated" data-wow-delay="00ms"
                                     data-wow-duration="1500ms"
-                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-17.png)',visibility:'visible',animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInRight'}}
+                                    style={{visibility:'visible',animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInRight'}}
                                     >
                                 </div>
                             </div>
@@ -30,7 +35,7 @@ return (
                                     <p>Clients</p>
                                     <h2>Latest thinking in AI and our</h2>
                                     <div class="decor"
-                                     style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}
+
                                       >
                                     </div>
                                 </div>
@@ -38,39 +43,39 @@ return (
                                     <ul class="logo-box logo-box-one clearfix">
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-6.png?w=525&amp;ssl=1"
+                                                        src={client1}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-7.png?w=525&amp;ssl=1"
+                                                        src={client2}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-8.png?w=525&amp;ssl=1"
+                                                        src={client3}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-9.png?w=525&amp;ssl=1"
+                                                        src={client4}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                     </ul>
                                     <ul class="logo-box logo-box-two clearfix">
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-10.png?w=525&amp;ssl=1"
+                                                        src={client5}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-11.png?w=525&amp;ssl=1"
+                                                        src={client6}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                         <li>
                                             <figure class="image-box"><a href="#"><img decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/clients-logo-12.png?w=525&amp;ssl=1"
+                                                        src={client4}
                                                         alt="Awesome Image" width="170" height="45"/></a></figure>
                                         </li>
                                     </ul>

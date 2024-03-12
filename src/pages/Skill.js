@@ -1,5 +1,5 @@
 import React from 'react'
-
+import illustration1 from "../images/resource/illastration-1.png"
 const Skill = () => {
     return (
         <section class="elementor-section elementor-top-section elementor-element elementor-element-9638a3f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9638a3f" data-element_type="section">
@@ -12,14 +12,14 @@ const Skill = () => {
 
                                 <section class="skills-section">
                                     <div class="pattern-layer"
-                                    style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-4.png)' }}
+
                                    ></div>
                                     <div class="auto-container">
                                         <div class="row clearfix">
                                             <div class="col-lg-6 col-md-6 col-sm-12 image-column">
                                                 <div class="image-box wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                                                     <figure class="image js-tilt">
-                                                        <img decoding="async" src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/illastration-1.png?w=525&#038;ssl=1" alt="Awesome Image" data-recalc-dims="1"/></figure>
+                                                        <img decoding="async" src={illustration1} alt="Awesome Image" data-recalc-dims="1"/></figure>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 content-column">
@@ -29,7 +29,7 @@ const Skill = () => {
                                                             <p>Skills &amp; Facts</p>
                                                             <h2>We keep our self updated with latest trends</h2>
                                                             <div class="decor"
-                                                            style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)' }}
+
                                                             ></div>
                                                         </div>
                                                         <div class="text">

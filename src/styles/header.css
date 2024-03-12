@@ -82,7 +82,7 @@
 
 .main-menu .navigation{
   position:inherit;
-  margin:0px;
+  margin:0px auto;/**0*/
 }
 
 .main-menu .navigation > li{
@@ -115,7 +115,7 @@
   font-weight:700;
   opacity:1;
   font-family: 'Muli', sans-serif;
-  color:#fff;
+  color:#ffff;
   padding: 0px;
   z-index:1;
   -webkit-transition:all 500ms ease;
@@ -127,7 +127,7 @@
 
 .main-menu .navigation > li.menu-item-has-children > a:after{
   position: absolute;
-  content: "\f107";
+
   font-family: 'Font Awesome 5 Free';
   font-weight: 700;
   right: -30px;
@@ -767,10 +767,19 @@ div#mCSB_1_container{
 .sticky-header .logo-box{
   position: relative;
   float: left;
-  padding: 14px 0px 14px 0px !important;
+  padding: 9px ;
   border: none !important;
+  background: linear-gradient(135deg, #FFFFFF, #117759);
+  /*background: linear-gradient(135deg, #FFFFFF, #03D770);;*/
+  border-radius: 100px;
+  bottom: 5px;
 }
+.sticky-header .logo-box a img{
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  padding: 5px;
 
+}
 .sticky-header .menu-area{
   position: relative;
   float: right;
@@ -816,7 +825,7 @@ div#mCSB_1_container{
 }
 
 .main-header.style-three .sticky-header .main-menu .navigation > li{
-  padding-top: 24px;
+  padding-top: 38px;
 }
 
 .main-header.style-three .sticky-header .main-menu .navigation > li a{
@@ -1403,7 +1412,23 @@ div#mCSB_1_container{
 
 .main-header.style-three .header-upper .logo{
   margin-right: 130px;
-  padding-top: 50px;
+  position: relative;
+  float: left;
+  top:8px;
+  padding: 9px ;
+  border: none !important;
+  background: linear-gradient(135deg, #FFFFFF, #117759);
+  /*background: linear-gradient(135deg, #FFFFFF, #03D770);;*/
+  border-radius: 100px;
+
+}
+#Imag-1{
+  background-color: #FFFFFF;
+  padding: 5px;
+  height:65px;
+  width:65px;
+  position:relative;
+  border-radius: 100px;
 }
 
 .main-header.style-three .main-menu .navigation > li{
@@ -1459,6 +1484,14 @@ div#mCSB_1_container{
   position: relative;
   display: inline-block;
   margin-right: 6px;
+  padding-top: 0px;
+}
+#HelA{
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+
+
 }
 
 .main-header.style-three .right-column .social-links li:last-child{

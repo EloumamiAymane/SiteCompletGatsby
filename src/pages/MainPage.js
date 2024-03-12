@@ -1,5 +1,8 @@
 import React from 'react'
-
+import  banner from "../images/banner/banner-2-1.png"
+import  gear4 from "../images/icons/gear-4.png"
+import  gear5 from "../images/icons/gear-5.png"
+import  gear6 from "../images/icons/gear-6.png"
 const MainPage = () => {
 return (
 <section
@@ -16,7 +19,7 @@ return (
 
                         <section class="banner-style-two">
                             <div class="pattern-layer"
-                            style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-10.png)'}}
+
                             >
                             </div>
                             <div class="large-container">
@@ -26,27 +29,27 @@ return (
                                             <h1>Best Artificial Intelligence Lab</h1>
                                             <p>Naxly bring the power of data science and artificial intelligence to
                                                 every business.</p>
-                                            <a href="http://el.commonsupport.com/newwp/naxly/about-company/"
-                                                class="theme-btn style-five"><i class="flaticon-next"></i>More
-                                                Details</a>
+                                            {/*<a href="http://el.commonsupport.com/newwp/naxly/about-company/"*/}
+                                            {/*    class="theme-btn style-five"><i class="flaticon-next"></i>More*/}
+                                            {/*    Details</a>*/}
                                         </div>
                                     </div>
                                     <div class="col-lg-7 col-md-12 col-sm-12 image-column">
                                         <div class="image-box">
                                             <figure class="image image-1"><img decoding="async"
-                                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/banner-2-1.png?w=525&amp;ssl=1"
+                                                    src={banner}
                                                     alt="Awesome Image" width="945" height="771"/></figure>
                                             <figure class="image image-2 rotate-me"><img decoding="async"
-                                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gear-4.png?w=525&amp;ssl=1"
+                                                    src={gear4}
                                                     alt="Awesome Image" width="245" height="244"/></figure>
                                             <figure class="image image-3 rotate-me"><img decoding="async"
-                                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gear-5.png?w=525&amp;ssl=1"
+                                                    src={gear5}
                                                     alt="Awesome Image" width="156" height="156"/></figure>
                                             <figure class="image image-4 rotate-me"><img decoding="async"
-                                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gear-5.png?w=525&amp;ssl=1"
+                                                    src={gear5}
                                                     alt="Awesome Image" width="156" height="156"/></figure>
                                             <figure class="image image-5 rotate-me"><img decoding="async"
-                                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gear-6.png?w=525&amp;ssl=1"
+                                                    src={gear6}
                                                     alt="Awesome Image" width="253" height="253"/></figure>
                                             <div class="anim-icon">
                                                 <span class="icon icon-1"></span>

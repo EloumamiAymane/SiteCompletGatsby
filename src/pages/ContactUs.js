@@ -1,5 +1,5 @@
 import React from 'react'
-
+import  rocket from "../images/resource/rocket-1.png"
 export const ContactUs = () => {
 return (
 <section>
@@ -14,7 +14,7 @@ return (
 
                         <section class="contact-section style-two" id="contact">
                             <figure class="image-layer float-bob-y"><img decoding="async"
-                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/rocket-1.png?w=525&amp;ssl=1"
+                                    src={rocket}
                                     alt="Awesome Image" width="353" height="359" /></figure>
                             <div class="auto-container">
                                 <div class="sec-title text-center mb-60">
@@ -113,18 +113,18 @@ return (
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <p  style={{display:'none !important'}}
-                                                            class="akismet-fields-container" data-prefix="_wpcf7_ak_">
-                                                            <label>Δ<textarea name="_wpcf7_ak_hp_textarea" cols="45"
-                                                                    rows="8" maxlength="100"></textarea></label><input
-                                                                type="hidden" id="ak_js_1" name="_wpcf7_ak_js"
-                                                                value="1708810346967" />
-                                                            <script>
-                                                                document.getElementById("ak_js_1").setAttribute("value",
-                                                                    (new Date()).getTime());
-                                                            </script>
-                                                        </p>
-                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                        {/*<p  style={{display:'none !important'}}*/}
+                                                        {/*    class="akismet-fields-container" data-prefix="_wpcf7_ak_">*/}
+                                                        {/*    <label>Δ<textarea name="_wpcf7_ak_hp_textarea" cols="45"*/}
+                                                        {/*            rows="8" maxlength="100"></textarea></label><input*/}
+                                                        {/*        type="hidden" id="ak_js_1" name="_wpcf7_ak_js"*/}
+                                                        {/*        value="1708810346967" />*/}
+                                                        {/*    <script>*/}
+                                                        {/*        document.getElementById("ak_js_1").setAttribute("value",*/}
+                                                        {/*            (new Date()).getTime());*/}
+                                                        {/*    </script>*/}
+                                                        {/*</p>*/}
+                                                        {/*<div class="wpcf7-response-output" aria-hidden="true"></div>*/}
                                                     </form>
                                                 </div>
                                             </div>

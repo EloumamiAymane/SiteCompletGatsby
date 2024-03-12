@@ -1,5 +1,7 @@
 import React from 'react'
-
+import  welcome1 from "../images/resource/welcome-1.png"
+import  welcome2 from "../images/resource/welcome-2.png"
+import  welcome3 from "../images/resource/welcome-3.png"
 export const Welcom = () => {
 return (
 <section>
@@ -18,7 +20,7 @@ return (
                                     <p>Welcome to Naxly</p>
                                     <h2>Target your customers with the <br/> right messages</h2>
                                     <div class="decor"
-                                       style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}
+
                                       >
                                     </div>
                                 </div>
@@ -31,7 +33,7 @@ return (
                                             <div class="inner-box">
                                                 <div class="image-box">
                                                     <figure class="image"><img decoding="async" width="108" height="143"
-                                                            src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/welcome-1.png?resize=108%2C143&amp;ssl=1"
+                                                            src={welcome1}
                                                             class="attachment-naxly_136x143 size-naxly_136x143 wp-post-image"
                                                             alt="" data-attachment-id="375"
                                                             data-permalink="https://naxly.wpcomstaging.com/naxly_service/user-prespective/welcome-1/"
@@ -44,12 +46,10 @@ return (
                                                             data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/welcome-1.png?fit=108%2C150&amp;ssl=1"/>
                                                     </figure>
                                                     <div class="bg-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-6.png)'}}
-                                                       >
+                                                    >
                                                     </div>
                                                     <div class="overlay-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-7.png)'}}
-                                                        >
+                                                     >
                                                     </div>
                                                 </div>
                                                 <div class="lower-content">
@@ -73,7 +73,7 @@ return (
                                                 <div class="image-box">
                                                     <figure class="image"><img loading="lazy" decoding="async"
                                                             width="94" height="143"
-                                                            src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/welcome-2.png?resize=94%2C143&amp;ssl=1"
+                                                            src={welcome2}
                                                             class="attachment-naxly_136x143 size-naxly_136x143 wp-post-image"
                                                             alt="" data-attachment-id="376"
                                                             data-permalink="https://naxly.wpcomstaging.com/naxly_service/user-prespective/welcome-2/"
@@ -86,11 +86,11 @@ return (
                                                             data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/welcome-2.png?fit=94%2C147&amp;ssl=1"/>
                                                     </figure>
                                                     <div class="bg-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-6.png)'}}
+
                                                        >
                                                     </div>
                                                     <div class="overlay-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-7.png)'}}
+
                                                   >
                                                     </div>
                                                 </div>
@@ -115,7 +115,7 @@ return (
                                                 <div class="image-box">
                                                     <figure class="image"><img loading="lazy" decoding="async"
                                                             width="136" height="143"
-                                                            src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/welcome-3.png?resize=136%2C143&amp;ssl=1"
+                                                            src={welcome3}
                                                             class="attachment-naxly_136x143 size-naxly_136x143 wp-post-image"
                                                             alt="" data-attachment-id="377"
                                                             data-permalink="https://naxly.wpcomstaging.com/naxly_service/user-prespective/welcome-3/"
@@ -129,12 +129,10 @@ return (
                                                     </figure>
 
                                                     <div class="bg-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-6.png)'}}
-                                                       >
+                                                    >
                                                     </div>
                                                     <div class="overlay-pattern"
-                                                     style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-7.png)'}}
-                                                     ></div>
+                                                    ></div>
                                                 </div>
                                                 <div class="lower-content">
                                                     <h3><a

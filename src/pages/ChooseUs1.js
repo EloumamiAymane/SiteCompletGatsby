@@ -15,7 +15,7 @@ return (
 
                         <section class="chooseus-style-two bg-color-3">
                             <div class="bg-layer"
-                                style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/choose-bg.png)'}}>
+                               >
                             </div>
                             <div class="auto-container">
                                 <div class="title-inner mb-35 clearfix">
