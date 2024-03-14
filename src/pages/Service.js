@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import ServiceCard from '../Components/Cards/ServiceCard'
 import Slider from "react-slick";
-
+import  illustration from  "../images/resource/illastration-2.png"
 const Service = () => {
     const [width,setWidth]=useState('270px')
     const [settings, setSettings] = useState({
@@ -52,42 +52,41 @@ const Service = () => {
     };
 return (
 <section
-class="elementor-section elementor-top-section elementor-element elementor-element-3ac182f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+className="elementor-section elementor-top-section elementor-element elementor-element-3ac182f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
     data-id="3ac182f" data-element_type="section">
 
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1d08b6"
+    <div className="elementor-container elementor-column-gap-default">
+        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1d08b6"
             data-id="b1d08b6" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-1930b72 elementor-widget elementor-widget-naxly_our_services_v1"
+            <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-1930b72 elementor-widget elementor-widget-naxly_our_services_v1"
                     data-id="1930b72" data-element_type="widget" data-widget_type="naxly_our_services_v1.default">
-                    <div class="elementor-widget-container">
+                    <div className="elementor-widget-container">
 
-                        <section class="service-style-two">
-                            <div class="pattern-layer"
-                            style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-13.png)'}}
+                        <section className="service-style-two">
+                            <div className="pattern-layer"
+
                             >
                             </div>
-                            <figure class="image-layer"><img decoding="async"
-                                    src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/illastration-2.png?w=525&amp;ssl=1"
+                            <figure className="image-layer"><img decoding="async"
+                                    src={illustration}
                                     alt="Awesome Image" width="525" height="823"/></figure>
-                            <div class="auto-container">
-                                <div class="row clearfix">
-                                    <div class="col-xl-9 col-lg-12 col-md-12 inner-column">
-                                        <div class="inner-content">
-                                            <div class="sec-title text-center light">
+                            <div className="auto-container">
+                                <div className="row clearfix">
+                                    <div className="col-xl-9 col-lg-12 col-md-12 inner-column">
+                                        <div className="inner-content">
+                                            <div className="sec-title text-center light">
                                                 <p>Our Services</p>
                                                 <h2>Services we offer for you</h2>
-                                                <div class="decor"
-                                                style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-4.png)'}}
-                                                >
+                                                <div className="decor"
+                                              >
                                                 </div>
                                             </div>
                                             <div
-                                                class="service-carousel owl-carousel owl-theme owl-dots-none nav-style-one owl-loaded owl-drag  ">
+                                                className="service-carousel owl-carousel owl-theme owl-dots-none nav-style-one owl-loaded owl-drag  ">
 
-                                                <div class="owl-stage-outer">
-                                                    <div class="owl-stage "
+                                                <div className="owl-stage-outer">
+                                                    <div className="owl-stage "
                                                     style={{transition:'all 3s ease 0s'}}
                                                     >
                                              
@@ -111,9 +110,9 @@ class="elementor-section elementor-top-section elementor-element elementor-eleme
                                                       
                                                     </div>
                                                 </div>
-                                                <div class="owl-nav disabled">
-        <div class="owl-prev" onClick={goToPrevious}><span class=""></span></div>
-        <div class="owl-next" onClick={goToNext}><span class=""></span></div>
+                                                <div className="owl-nav disabled">
+        <div className="owl-prev" onClick={goToPrevious}><span className=""></span></div>
+        <div className="owl-next" onClick={goToNext}><span className=""></span></div>
       </div>
                                                
                                             </div>

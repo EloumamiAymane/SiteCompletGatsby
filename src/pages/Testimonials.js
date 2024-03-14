@@ -13,59 +13,60 @@ const Testimonials = () => {
         dots: false,
         fade: true,
         infinite: true,
-        speed: 500,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 5000,
         slidesToShow: 8,
         slidesToScroll: 1,
         waitForAnimate: false
       };
 return (
-<section class="elementor-section elementor-top-section elementor-element elementor-element-cbae8fb elementor-section-full_width elementor-section-height-default elementor-section-height-default">
+<section className="elementor-section elementor-top-section elementor-element elementor-element-cbae8fb elementor-section-full_width elementor-section-height-default elementor-section-height-default">
 
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d74fd9"
+    <div className="elementor-container elementor-column-gap-default">
+        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d74fd9"
             data-id="1d74fd9" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-653e096 elementor-widget elementor-widget-naxly_testimonials_v2"
+            <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-653e096 elementor-widget elementor-widget-naxly_testimonials_v2"
                     data-id="653e096" data-element_type="widget" data-widget_type="naxly_testimonials_v2.default">
-                    <div class="elementor-widget-container">
+                    <div className="elementor-widget-container">
 
-                        <section class="testimonial-style-two">
-                            <div class="title-inner bg-color-3">
-                                <div class="pattern-layer"
-                                style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-15.png)'}}
+                        <section className="testimonial-style-two">
+                            <div className="title-inner bg-color-3">
+                                <div className="pattern-layer"
+
                                   >
                                 </div>
-                                <div class="auto-container">
-                                    <div class="sec-title text-left light">
+                                <div className="auto-container">
+                                    <div className="sec-title text-left light">
                                         <p>Testimonials</p>
                                         <h2>Words from our clients</h2>
-                                        <div class="decor"
-                                        style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-4.png)'}}
-                                         >
+                                        <div className="decor"
+                                       >
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="lower-content">
-                                <div class="auto-container">
-                                    <div class="inner-content">
+                            <div className="lower-content">
+                                <div className="auto-container">
+                                    <div className="inner-content">
                                         <div
-                                            class="testimonial-carousel-2 owl-carousel owl-theme owl-dots-none nav-style-one owl-loaded owl-drag">
+                                            className="testimonial-carousel-2 owl-carousel owl-theme owl-dots-none nav-style-one owl-loaded owl-drag">
 
-                                            <div class="owl-stage-outer">
-                                                <div class="owl-stage"
+                                            <div className="owl-stage-outer">
+                                                <div className="owl-stage"
                                                 style={{transition:'all 0s ease 0s'}}
                                                    >
                                                     <Slider {...settings} ref={slider=> { sliderRef = slider }}>
-                                                    <div class="owl-item cloned" style={{width:'1034px'}}  >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item cloned" style={{width:'1034px'}}  >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="171"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-2/"
@@ -78,35 +79,35 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+
                                                                     >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Donal Archar</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item cloned" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="172"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-3/"
@@ -119,35 +120,35 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+
                                                                     >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Jams Shan</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="170"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-1/"
@@ -160,35 +161,35 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+
                                                                       >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Dedrew Kowzel</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item active" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item active" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="171"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-2/"
@@ -201,35 +202,35 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+
                                                                      >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Donal Archar</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="172"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-3/"
@@ -242,35 +243,34 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-3.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
-                                                                      >
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+                                                                    >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Jams Shan</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item cloned" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="170"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-1/"
@@ -283,35 +283,34 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-1.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
-                                                                      >
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+                                                                  >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Dedrew Kowzel</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned" style={{width:'1034px'}} >
-                                                        <div class="testimonial-content">
-                                                            <div class="inner-box">
-                                                                <figure class="image-box"><img loading="lazy"
+                                                    <div className="owl-item cloned" style={{width:'1034px'}} >
+                                                        <div className="testimonial-content">
+                                                            <div className="inner-box">
+                                                                <figure className="image-box"><img loading="lazy"
                                                                         decoding="async" width="553" height="432"
                                                                         src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=553%2C432&amp;ssl=1"
-                                                                        class="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
+                                                                        className="attachment-naxly_553x432 size-naxly_553x432 wp-post-image"
                                                                         alt=""
-                                                                        srcset="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
+                                                                        srcSet="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?w=553&amp;ssl=1 553w, https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?resize=300%2C234&amp;ssl=1 300w"
                                                                         sizes="(max-width: 525px) 100vw, 525px"
                                                                         data-attachment-id="171"
                                                                         data-permalink="https://naxly.wpcomstaging.com/naxly_testimonials/dedrew-kowzel/testimonial-2/"
@@ -324,20 +323,19 @@ return (
                                                                         data-medium-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=300%2C234&amp;ssl=1"
                                                                         data-large-file="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/testimonial-2.jpg?fit=525%2C410&amp;ssl=1"/>
                                                                 </figure>
-                                                                <div class="content-box">
-                                                                    <div class="icon-box"
-                                                                    style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-4.png)'}}
-                                                                        >
+                                                                <div className="content-box">
+                                                                    <div className="icon-box"
+                                                                  >
                                                                     </div>
-                                                                    <div class="text">
+                                                                    <div className="text">
                                                                         <p>As a growing company, we found in Naxly
                                                                             expertise in data science invaluble In
                                                                             almost two years of cooperation, they’ve
                                                                             helped us.</p>
                                                                     </div>
-                                                                    <div class="author-info">
+                                                                    <div className="author-info">
                                                                         <h4>Donal Archar</h4>
-                                                                        <span class="designation">CEO &amp; Founder -
+                                                                        <span className="designation">CEO &amp; Founder -
                                                                             Soft Solution</span>
                                                                     </div>
                                                                 </div>
@@ -347,14 +345,14 @@ return (
                                                     </Slider>
                                                 </div>
                                             </div>
-                                            <div class="owl-nav">
-                                                <div class="owl-prev" onClick={Previous}><span class=""></span></div>
-                                                <div class="owl-next" onClick={next}><span class=""></span></div>
+                                            <div className="owl-nav">
+                                                <div className="owl-prev" onClick={Previous}><span className=""></span></div>
+                                                <div className="owl-next" onClick={next}><span className=""></span></div>
                                             </div>
-                                            <div class="owl-dots">
-                                                <div class="owl-dot"><span></span></div>
-                                                <div class="owl-dot active"><span></span></div>
-                                                <div class="owl-dot"><span></span></div>
+                                            <div className="owl-dots">
+                                                <div className="owl-dot"><span></span></div>
+                                                <div className="owl-dot active"><span></span></div>
+                                                <div className="owl-dot"><span></span></div>
                                             </div>
                                         </div>
                                     </div>

@@ -3,22 +3,22 @@ import React from 'react'
 const ServiceCard = ({slide}) => {
 
   return (
-    <div class="owl-item"
+    <div className="owl-item"
     style={{width:'100%'}}>
-    <div class="service-block-two" style={{margin:'10px'}}>
-        <div class="inner-box">
-            <div class="text-layer">
+    <div className="service-block-two" style={{margin:'10px'}}>
+        <div className="inner-box">
+            <div className="text-layer">
                 <h2>{slide.title}</h2>
             </div>
-            <div class="icon-box" style={{WebkitBackgroundClip:'text'}}><i
-                    class={`${slide.icon}`} ></i></div>
+            <div className="icon-box" style={{WebkitBackgroundClip:'text'}}><i
+                    className={`${slide.icon}`} ></i></div>
             <h4><a
                     href="http://el.commonsupport.com/newwp/naxly/service-details/">Machine
                     Learning</a></h4>
             <p>{slide.description}</p>
-            <div class="link"><a
+            <div className="link"><a
                     href="http://el.commonsupport.com/newwp/naxly/service-details/"><i
-                        class="flaticon-next"></i>Read More</a>
+                        className="flaticon-next"></i>Read More</a>
             </div>
         </div>
     </div>

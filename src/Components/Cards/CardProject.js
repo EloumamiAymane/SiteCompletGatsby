@@ -1,33 +1,50 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import {motion, useInView} from "framer-motion";
 
 const CardProject = ({slide}) => {
+    const ref = useRef(null)
+    const isVisible = useInView(ref,{once:true})
+
   return (
-    <div class="owl-item cloned"  style={{width:'100%',margin:'auto',position:'relative'}}>
-    <div class="case-block-two" style={{margin:'10px'}}>
-        <div class="inner-box">
-            <figure class="image-box">
+      <motion.div
+          ref={ref}
+          initial={{
+              y: 100,
+              opacity: 0
+          }} // Start position: outside of the viewport on the left
+          animate={isVisible ? { y: 0, opacity: 1 } : {}}// End position: at the center of the viewport
+          transition={{
+              duration: 2,
+              type: "spring",
+              stiffness: 8
+          }} // Animation duration and type
+      >
+    <div className="owl-item cloned"  style={{width:'100%',margin:'auto',position:'relative'}}>
+    <div className="case-block-two" style={{margin:'10px'}}>
+        <div className="inner-box">
+            <figure className="image-box">
                 <img fetchpriority="high" decoding="async" width="370"
                     height="340"
                     src={`${slide.photo}`}
-                    class="attachment-naxly_370x340 size-naxly_370x340 wp-post-image"
+                    className="attachment-naxly_370x340 size-naxly_370x340 wp-post-image"
                     alt=""
         />
-                <div class="client-box">
+                <div className="client-box">
                     <span>Neuro Jump</span>
-                    <div class="client-logo"><img decoding="async"
+                    <div className="client-logo"><img decoding="async"
                             src="https://i0.wp.com/el.commonsupport.com/newwp/naxly/wp-content/uploads/2020/03/icon-1.png?w=525"
                             alt="Awesome Image" width="39" height="42"/>
                     </div>
                 </div>
-                <div class="link"><a
+                <div className="link"><a
                         href="https://naxly.wpcomstaging.com/naxly_project/invoice-data-capture-2/"><i
-                            class="flaticon-hyperlink"></i></a></div>
-                <div class="overlay-layer"></div>
+                            className="flaticon-hyperlink"></i></a></div>
+                <div className="overlay-layer"></div>
             </figure>
-            <div class="lower-content">
-                <div class="box">
-                    <div class="icon-box"><i
-                            class="icon flaticon-vision"></i></div>
+            <div className="lower-content">
+                <div className="box">
+                    <div className="icon-box"><i
+                            className="icon flaticon-vision"></i></div>
                     <p>Our Projects</p>
                     <h4><a
                             href="https://naxly.wpcomstaging.com/naxly_project/invoice-data-capture-2/">{slide.title}</a></h4>
@@ -36,6 +53,7 @@ const CardProject = ({slide}) => {
         </div>
     </div>
 </div>
+      </motion.div>
   )
 }
 

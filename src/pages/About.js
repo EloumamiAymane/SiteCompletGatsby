@@ -1,72 +1,108 @@
-import React from 'react'
+import React, {useRef} from 'react'
+
+import about from "../images/resource/about.png"
+import {motion, useInView} from "framer-motion";
 
 const About = () => {
+
+    const ref = useRef(null)
+    const isVisible = useInView(ref)
+
 return (
-<section class="elementor-section elementor-top-section elementor-element elementor-element-7ba2a33 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
+<section className="elementor-section elementor-top-section elementor-element elementor-element-7ba2a33 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
 
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b295bf3"
+    <div className="elementor-container elementor-column-gap-default">
+        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b295bf3"
             data-id="b295bf3" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-a005400 elementor-widget elementor-widget-naxly_about_company_v2"
+            <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-a005400 elementor-widget elementor-widget-naxly_about_company_v2"
                     data-id="a005400" data-element_type="widget" data-widget_type="naxly_about_company_v2.default">
-                    <div class="elementor-widget-container">
+                    <div className="elementor-widget-container">
 
-                        <section class="about-style-two">
-                            <div class="auto-container">
-                                <div class="row clearfix">
-                                    <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                        <section className="about-style-two">
+                            <div className="auto-container">
+                                <div className="row clearfix">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 image-column">
                                         <div id="image_block_01">
-                                            <div class="image-box wow slideInLeft animated" data-wow-delay="00ms"
-                                                data-wow-duration="1500ms"
-                                                style={{visibility:'visible',animationDuration:'1500ms',animationDelay:'0ms',animationName:'slideInLeft'}}>
-                                                <div class="pattern-layer"
-                                                style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/uploads/2020/03/shape-12.png)'}}
+                                            <div className="image-box wow slideInLeft animated" data-wow-delay="00ms"
+                                                 data-wow-duration="1500ms">
+                                                <motion.div
+                                                    ref={ref}
+                                                    initial={{
+                                                        x: -100,
+                                                        opacity: 0
+                                                    }} // Start position: outside of the viewport on the left
+                                                    animate={isVisible ? { x: 0, opacity: 1 } : {}}// End position: at the center of the viewport
+                                                    transition={{
+                                                        duration: 2,
+                                                        type: "spring",
+                                                        stiffness: 8
+                                                    }} // Animation duration and type
                                                 >
-                                                </div>
-                                                <figure class="image js-tilt" style={{willChange:'transform'}}><img
-                                                        decoding="async"
-                                                        src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/about-1.png?w=525&amp;ssl=1"
-                                                        alt="Awesome Image" width="615" height="504"/>
-                                                    <div class="js-tilt-glare"
-                                                    style={{position:'absolute',top:'0px',left:'0px',width:'100%',height:'100%',overflow:'hidden'}}
-                                                        >
-                                                        <div class="js-tilt-glare-inner"
-                                                         style={{position:'absolute',top:'50%',left:'50%',pointerEvents:'none',backgroundImage:'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)',width:'1041.47px',height:'1041.47px',transform:' rotate(180deg) translate(-50%, -50%)',transformOrigin:'0% 0% 0px',opacity:'0'}}
-                                                            >
-                                                        </div>
+                                                    <div className="pattern-layer">
                                                     </div>
-                                                </figure>
+                                                    <figure className="image js-tilt"><img
+                                                        decoding="async"
+                                                        src={about}
+                                                        alt="Awesome Image" width="615" height="504"/>
+                                                        <div className="js-tilt-glare"
+                                                             style={{
+                                                                 position: 'absolute',
+                                                                 top: '0px',
+                                                                 left: '0px',
+                                                                 width: '100%',
+                                                                 height: '100%',
+                                                                 overflow: 'hidden'
+                                                             }}
+                                                        >
+                                                            <div className="js-tilt-glare-inner"
+                                                                 style={{
+                                                                     position: 'absolute',
+                                                                     top: '50%',
+                                                                     left: '50%',
+                                                                     pointerEvents: 'none',
+                                                                     backgroundImage: 'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)',
+                                                                     width: '1041.47px',
+                                                                     height: '1041.47px',
+                                                                     transform: ' rotate(180deg) translate(-50%, -50%)',
+                                                                     transformOrigin: '0% 0% 0px',
+                                                                     opacity: '0'
+                                                                 }}
+                                                            >
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </motion.div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                                    <div className="col-lg-5 col-md-12 col-sm-12 content-column">
                                         <div id="content_block_03">
-                                            <div class="content-box">
-                                                <div class="sec-title style-two text-left">
+                                            <div className="content-box">
+                                                <div className="sec-title style-two text-left">
                                                     <p>About Company</p>
                                                     <h2>Mission is to bring the power of AI to every business</h2>
-                                                    <div class="decor"
-                                                    style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}
+                                                    <div className="decor"
+
                                                       >
                                                     </div>
                                                 </div>
-                                                <div class="text">
+                                                <div className="text">
                                                     <p>To take a trivial example, which of us ever undertakes laborious
                                                         physical exercise, except to obtain some advantage from it but
                                                         right to find fault with a man who chooses enjoy.</p>
                                                 </div>
-                                                <div class="lower-box">
-                                                    <div class="icon-box">
-                                                        <div class="bg-box"
-                                                        style={{backgroundImage:'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/icon-bg-3.png)'}}
+                                                <div className="lower-box">
+                                                    <div className="icon-box">
+                                                        <div className="bg-box"
+
                                                         >
                                                         </div>
-                                                        <i class="icon flaticon-brain-2" style={{WebkitBackgroundClip:'text'}} ></i>
+                                                        <i className="icon flaticon-brain-2" style={{WebkitBackgroundClip:'text'}} ></i>
                                                     </div>
                                                     <h5>Impressive Works Since 2010</h5>
                                                     <a href="http://el.commonsupport.com/newwp/naxly/about-company/"><i
-                                                            class="flaticon-next"></i>More About Us</a>
+                                                            className="flaticon-next"></i>More About Us</a>
                                                 </div>
                                             </div>
                                         </div>
