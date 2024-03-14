@@ -61,131 +61,131 @@ const MobileAppProcess = () => {
 return (
 <div>
 
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0ad6c3d"
+    <div className="elementor-container elementor-column-gap-default">
+        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0ad6c3d"
             data-id="0ad6c3d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-29f68e5 elementor-widget elementor-widget-naxly_tk_app_screenshot"
+            <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-29f68e5 elementor-widget elementor-widget-naxly_tk_app_screenshot"
                     data-id="29f68e5" data-element_type="widget" data-widget_type="naxly_tk_app_screenshot.default">
-                    <div class="elementor-widget-container">
+                    <div className="elementor-widget-container">
 
-                        <section class="app-screenshot-area">
-                            <div class="outer-container">
+                        <section className="app-screenshot-area">
+                            <div className="outer-container">
 
-                                <div class="carousel-container">
-                                    <div class="carousel-outer">
+                                <div className="carousel-container">
+                                    <div className="carousel-outer">
 
                                         <div
-                                            class="screenshot-carousel owl-carousel owl-theme style1 owl-loaded owl-drag">
+                                            className="screenshot-carousel owl-carousel owl-theme style1 owl-loaded owl-drag">
 
-                                            <div class="owl-stage-outer">
+                                            <div className="owl-stage-outer">
                                             
-                                                <div class="owl-stage" 
+                                                <div className="owl-stage" 
                                                 style={{transition:' all 1s ease 0s', width:`${widthh}px`, transform:`${transform}`,margin:'auto'}}
                                                   >
                                                     <Slider  {...settings}> 
                                                     
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                     style={{width:' 322px', marginRight: '20px'}}
                                                      >
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot3.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot4.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot5.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item active center"
+                                                    <div className="owl-item active center"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot1.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                    <div className="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot2.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                    <div className="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot3.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                    <div className="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot4.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                    <div className="owl-item"  style={{width:' 322px', marginRight: '20px'}}>
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot5.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot1.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot2.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="owl-item cloned"
+                                                    <div className="owl-item cloned"
                                                         style={{width:' 322px', marginRight: '20px'}}>
-                                                        <div class="single-item">
-                                                            <div class="img-holder">
+                                                        <div className="single-item">
+                                                            <div className="img-holder">
                                                                 <img decoding="async"
                                                                     src="https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/12/app-screen-shot3.png?w=525&amp;ssl=1"
                                                                     alt="Awesome Image" width="322" height="620"/>
@@ -198,12 +198,12 @@ return (
                                             </div>
                                             
                                            
-                                            <div class="owl-dots" style={{visibility:'hidden'}}>
-                                                <div class="owl-dot active"><span></span></div>
-                                                <div class="owl-dot"><span></span></div>
-                                                <div class="owl-dot"><span></span></div>
-                                                <div class="owl-dot"><span></span></div>
-                                                <div class="owl-dot"><span></span></div>
+                                            <div className="owl-dots" style={{visibility:'hidden'}}>
+                                                <div className="owl-dot active"><span></span></div>
+                                                <div className="owl-dot"><span></span></div>
+                                                <div className="owl-dot"><span></span></div>
+                                                <div className="owl-dot"><span></span></div>
+                                                <div className="owl-dot"><span></span></div>
                                                 
                                             </div>
                                         </div>

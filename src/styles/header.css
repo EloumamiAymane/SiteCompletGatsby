@@ -490,11 +490,28 @@
 }
 
 .mobile-menu .nav-logo{
+  width: 40%;
   position:relative;
-  padding:30px 25px;
-  text-align:left;  
-}
+  padding:8px;
 
+  border-radius: 100px;
+  background: linear-gradient(135deg, #FFFFFF, #117759);
+  margin:10px auto;
+  /*position: relative;*/
+  /*float: left;*/
+  /*padding:30px 25px;*/
+  /*border: none !important;*/
+  /*background: linear-gradient(135deg, #FFFFFF, #117759);*/
+  /*!*background: linear-gradient(135deg, #FFFFFF, #03D770);;*!*/
+  /*border-radius: 100px;*/
+  /*bottom: 5px;*/
+}
+.mobile-menu .nav-logo a img{
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  padding: 8px;
+
+}
 .mobile-menu-visible{
   overflow: hidden;
 }

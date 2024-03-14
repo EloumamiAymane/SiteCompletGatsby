@@ -2040,6 +2040,7 @@
 	width: 63px;
 	height: 63px;
 	background-repeat: no-repeat;
+	background-image: url("../images/icons/icon-bg-3.png");
 }
 
 #content_block_03 .content-box .lower-box h5{
@@ -2938,6 +2939,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-image: url("../images/shape/shape-15.png");
 }
 
 .testimonial-style-two .lower-content .testimonial-content .inner-box{
@@ -3028,6 +3030,7 @@
 	background-repeat: no-repeat;
 	-webkit-animation: zoom-fade 3s infinite linear;
     animation: zoom-fade 3s infinite linear;
+
 }
 
 .testimonial-style-two .lower-content .inner-content{
@@ -7807,7 +7810,7 @@ h3 a{
 
 .contact-section.style-two{
 	position: relative;
-	padding: 125px 0px 100px 0px;
+	padding: 125px 0px 150px 0px;
 }
 
 .contact-section.style-two #content_block_09 .content-box #contact-form:before{
@@ -17091,6 +17094,7 @@ download-app
 .client-testi-section-two .sec-title {
     margin-bottom: 50px;
 }
+
 
 .client-testi-section-two .pattern-layer {
     position: absolute;

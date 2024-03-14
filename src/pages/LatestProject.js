@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Slider from 'react-slick';
 import CardProject from '../Components/Cards/CardProject';
 
+
 const LatestProject = () => {
+
   let sliderRef = useRef(null);
     const projetcs = [
         { title: 'Invoice data capture', photo: 'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gallery-3.jpg?resize=370%2C340&amp;ssl=1' },
@@ -13,9 +15,6 @@ const LatestProject = () => {
         { title: 'Big data processing', photo: 'https://i0.wp.com/naxly.wpcomstaging.com/wp-content/uploads/2020/03/gallery-3.jpg?resize=370%2C340&amp;ssl=1'},
       
       ];
-
-
-    
       const goToPrevious = () => {
         // console.log(sliderRef)
           sliderRef.slickNext();
@@ -51,37 +50,36 @@ const LatestProject = () => {
           ]
       });
 return (
-<section class="elementor-section elementor-top-section elementor-element elementor-element-a6f5114 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
+<section className="elementor-section elementor-top-section elementor-element elementor-element-a6f5114 elementor-section-full_width elementor-section-height-default elementor-section-height-default">
 
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb1c4ae"
+    <div className="elementor-container elementor-column-gap-default">
+        <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb1c4ae"
             data-id="fb1c4ae" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-6d3dce6 elementor-widget elementor-widget-naxly_case_studies_v2"
+            <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-6d3dce6 elementor-widget elementor-widget-naxly_case_studies_v2"
                     data-id="6d3dce6" data-element_type="widget" data-widget_type="naxly_case_studies_v2.default">
-                    <div class="elementor-widget-container">
+                    <div className="elementor-widget-container">
 
-                        <section class="case-style-two">
-                            <div class="auto-container">
-                                <div class="top-inner clearfix">
-                                    <div class="sec-title style-two text-left pull-left">
+                        <section className="case-style-two">
+                            <div className="auto-container">
+                                <div className="top-inner clearfix">
+                                    <div className="sec-title style-two text-left pull-left">
                                         <p>Case Studies</p>
                                         <h2>Latest from our projects</h2>
-                                        <div class="decor"
-                                        style={{backgroundImage:' url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)'}}
-                                         >
+                                        <div className="decor"
+                                       >
                                         </div>
                                     </div>
-                                    <div class="btn-box pull-right">
+                                    <div className="btn-box pull-right">
                                         <a href="http://el.commonsupport.com/newwp/naxly/project-2-columns/"
-                                            class="theme-btn style-five"><i class="flaticon-next"></i>All Projects</a>
+                                            className="theme-btn style-five"><i className="flaticon-next"></i>All Projects</a>
                                     </div>
                                 </div>
                                 <div
-                                    class="three-item-carousel owl-carousel owl-theme owl-nav-none owl-loaded owl-drag">
+                                    className="three-item-carousel owl-carousel owl-theme owl-nav-none owl-loaded owl-drag">
 
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage"
+                                    <div className="owl-stage-outer">
+                                        <div className="owl-stage"
                                         style={{transition:'all 0s ease 0'}}
                                            >
                                         <Slider {...settings} ref={slider => { sliderRef = slider}}>
@@ -89,23 +87,24 @@ return (
                                               
                                                {projetcs.map((slideItem, slideIndex) => (
                                                <>
+
                                                <CardProject  key={slideIndex} slide={slideItem}   />
-                                              
+
                                                </>
-                                              
-                                          
+
+
                                            )
                                        )}
                                 </Slider>
                                         </div>
                                     </div>
-                                    <div class="owl-nav">
-                                        <div class="owl-prev"><span class="flaticon-left"></span></div>
-                                        <div class="owl-next"><span class="flaticon-arrow"></span></div>
+                                    <div className="owl-nav">
+                                        <div className="owl-prev"><span className="flaticon-left"></span></div>
+                                        <div className="owl-next"><span className="flaticon-arrow"></span></div>
                                     </div>
-                                    <div class="owl-dots">
-                                        <div class="owl-dot" onClick={goToNext}><span></span></div>
-                                        <div class="owl-dot active" onClick={goToPrevious}><span></span></div>
+                                    <div className="owl-dots">
+                                        <div className="owl-dot" onClick={goToNext}><span></span></div>
+                                        <div className="owl-dot active" onClick={goToPrevious}><span></span></div>
                                     </div>
                                 </div>
                             </div>
