@@ -260,10 +260,10 @@ return (
                 <div className="copyright">
                     <p>Copyright © <a href="#">Naxly</a>, All Rights Reserved.</p>
                 </div>
-                <figure className="footer-logo"><a href="https://naxly.wpcomstaging.com/"><img
-                            src={logo1}
-                            style={{height:'85px',width:"85px"}}
-                            alt="Awesome Image"/></a></figure>
+                {/*<figure className="footer-logo"><a href="https://naxly.wpcomstaging.com/"><img*/}
+                {/*            src={logo1}*/}
+                {/*            style={{height:'85px',width:"85px"}}*/}
+                {/*            alt="Awesome Image"/></a></figure>*/}
             </div>
             <div className="right-column pull-right">
                 <ul className="footer-nav">

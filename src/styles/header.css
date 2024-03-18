@@ -560,7 +560,7 @@
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
-  background: #1d165c;
+  background: #00532c;
   padding: 0px 0px;
   z-index: 5;
   opacity: 0;
@@ -784,12 +784,12 @@ div#mCSB_1_container{
 .sticky-header .logo-box{
   position: relative;
   float: left;
-  padding: 9px ;
+  padding: 6px ;
   border: none !important;
   background: linear-gradient(135deg, #FFFFFF, #117759);
   /*background: linear-gradient(135deg, #FFFFFF, #03D770);;*/
   border-radius: 100px;
-  bottom: 5px;
+  bottom: 2px;
 }
 .sticky-header .logo-box a img{
   background-color: #FFFFFF;

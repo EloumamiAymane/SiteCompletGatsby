@@ -35,7 +35,7 @@ const IndexPage = () => {
     const mobile="mobile-menu-visible"
     return (
 
-        <div class={`${click ? `home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer
+        <div className={`${click ? `home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer
     elementor-default elementor-kit-9 elementor-page elementor-page-1469 dialog-body dialog-buttons-body dialog-container 
     dialog-buttons-container customize-support e--ua-firefox ${mobile}`:'home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer elementor-default elementor-kit-9 elementor-page elementor-page-1469 dialog-body dialog-buttons-body dialog-container  dialog-buttons-container customize-support e--ua-firefox'} `}
              data-elementor-device-mode="desktop"
