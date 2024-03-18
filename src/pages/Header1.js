@@ -33,7 +33,7 @@ return (
         <div className="outer-box clearfix">
             <div className="left-column pull-left clearfix">
                 <div className="logo-box pull-left">
-                    <figure className="logo"><a href="https://naxly.wpcomstaging.com/" title="Titre du site"><img
+                    <figure className="logo"><a href="https://naxly.wpcomstaging.com/" title="Insea"><img
                                 src={logo1} alt="logo" id="Imag-1"
                                 style={{}}  /></a></figure>
                 </div>
@@ -126,7 +126,7 @@ return (
     <div className="sticky-header" style={{position:'fixed',top:'0px',height:'80px'}}>
         <div className="outer-box clearfix">
             <div className="left-column pull-left">
-                <figure className="logo-box"><a href="https://naxly.wpcomstaging.com/" title="Titre du site"><img
+                <figure className="logo-box"><a href="https://naxly.wpcomstaging.com/" title="Insea"><img
                             src={logo1} alt="logo"
                             style={{height:'55px',width:"60px"}}/></a></figure>
                 <div className="menu-area">
