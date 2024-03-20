@@ -3,7 +3,7 @@ import  welcome1 from "../images/resource/welcome-1.png"
 import  welcome2 from "../images/resource/welcome-2.png"
 import  welcome3 from "../images/resource/welcome-3.png"
 import {WelcomItem} from "../Components/Cards/WelcomItem";
-export const Welcom = () => {
+ const Welcom = () => {
 return (
 <section>
 
@@ -63,3 +63,5 @@ return (
 </section>
 )
 }
+
+export default Welcom
