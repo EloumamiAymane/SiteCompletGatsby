@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ChooseUs1 = () => {
+ const ChooseUs1 = () => {
 return (
 <section
     className="elementor-section elementor-top-section elementor-element elementor-element-cd01a5e elementor-section-full_width elementor-section-height-default elementor-section-height-default">
@@ -87,3 +87,4 @@ return (
 </section>
 )
 }
+export default ChooseUs1

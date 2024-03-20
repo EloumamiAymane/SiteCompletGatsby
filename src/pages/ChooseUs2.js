@@ -1,7 +1,7 @@
 import React from 'react'
 import mask from "../images/resource/mask.png"
 import circlel from "../images/resource/r.png"
-export const ChooseUs2 = () => {
+ const ChooseUs2 = () => {
 return (
 <section>
 
@@ -156,3 +156,5 @@ return (
 </section>
 )
 }
+
+export default ChooseUs2

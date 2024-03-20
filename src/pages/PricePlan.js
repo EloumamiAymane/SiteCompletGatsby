@@ -2,7 +2,7 @@ import React from 'react'
 import {PriceCard} from "../Components/Cards/PriceCard";
 
 
-export const PricePlan = () => {
+ const PricePlan = () => {
 
 return (
 <section>
@@ -55,3 +55,5 @@ return (
 </section>
 )
 }
+
+export default PricePlan

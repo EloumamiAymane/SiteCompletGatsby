@@ -1,5 +1,5 @@
 import React from 'react'
-export const ContactUs = () => {
+ const ContactUs = () => {
 return (
 <section>
 
@@ -139,3 +139,5 @@ return (
 </section>
 )
 }
+
+export default ContactUs

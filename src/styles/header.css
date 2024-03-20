@@ -787,13 +787,12 @@ div#mCSB_1_container{
   padding: 6px ;
   border: none !important;
   background: linear-gradient(135deg, #FFFFFF, #117759);
-  /*background: linear-gradient(135deg, #FFFFFF, #03D770);;*/
   border-radius: 100px;
   bottom: 2px;
 }
 .sticky-header .logo-box a img{
   background-color: #FFFFFF;
-  border-radius: 100px;
+  border-radius: 90px;
   padding: 5px;
 
 }

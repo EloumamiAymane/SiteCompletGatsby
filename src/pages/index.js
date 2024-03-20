@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 
-import MainPage from './MainPage'
 
 import Subscribe from './Subscribe'
 import About from './About'
@@ -13,11 +12,11 @@ import NewsUpdate from './NewsUpdate'
 import Clients from './Clients'
 import Contact1 from './Contact1'
 import Footer from './Footer'
-import { ChooseUs1 } from './ChooseUs1'
-import { PricePlan } from './PricePlan'
-import { Welcom } from './Welcom'
-import { ContactUs } from './ContactUs'
-import { ChooseUs2 } from './ChooseUs2'
+import ChooseUs1  from './ChooseUs1'
+import PricePlan  from './PricePlan'
+import Welcom  from './Welcom'
+import  ContactUs  from './ContactUs'
+import  ChooseUs2  from './ChooseUs2'
 import News from './News'
 import About1 from './About1'
 import Skill from './Skill'
@@ -47,7 +46,6 @@ const IndexPage = () => {
     <Mobile/>
 <div className="elementor elementor-115" data-elementor-type="wp-page" data-elementor-id="115">
 
-{/*<MainPage/>*/}
 <MainPage1/>
 <Subscribe/>
 
